@@ -350,6 +350,101 @@ padding-top: 25px;
     border: solid blanchedalmond 2px;
 }
 
+
+      /* Default styles are for larger screens */
+
+/* Medium screens (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+
+  .nav-logo {
+    height: 40px;
+    width: 80px;
+  }
+
+  .nav-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-cart, .nav-returns, .nav-singin, .language {
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+
+  .hero-section {
+    height: 300px;
+  }
+
+  .shop-section .box {
+    width: 45%;
+    margin-bottom: 15px;
+  }
+
+  .foot-pannel2 ul {
+    margin: 10px;
+  }
+}
+
+/* Small screens (phones, 480px and below) */
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav-logo {
+    width: 60px;
+    height: 30px;
+  }
+
+  .nav-search {
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .nav-search input {
+    margin-bottom: 5px;
+  }
+
+  .nav-cart, .nav-returns, .nav-singin, .language {
+    font-size: 0.7rem;
+    margin: 5px;
+  }
+
+  .hero-section {
+    height: 200px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-message {
+    font-size: 0.75rem;
+    width: 90%;
+  }
+
+  .shop-section .box {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .foot-pannel2 ul {
+    font-size: 0.7rem;
+    margin: 5px;
+  }
+
+  .foot-pannel4 .pages a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
   </style>
     <header>
     <div class="navbar">
