@@ -350,15 +350,13 @@ padding-top: 25px;
     border: solid blanchedalmond 2px;
 }
 
-
-      /* Default styles are for larger screens */
-
 /* Medium screens (tablets, 768px and up) */
 @media screen and (max-width: 768px) {
   .navbar {
     flex-wrap: wrap;
     justify-content: center;
     height: auto;
+    padding: 10px;
   }
 
   .nav-logo {
@@ -366,27 +364,27 @@ padding-top: 25px;
     width: 80px;
   }
 
-  .nav-search {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .nav-cart, .nav-returns, .nav-singin, .language {
-    margin-top: 10px;
+  .nav-cart,
+  .nav-returns,
+  .nav-singin,
+  .language {
     font-size: 0.8rem;
+    margin-top: 5px;
   }
 
   .hero-section {
     height: 300px;
+    text-align: center;
   }
 
   .shop-section .box {
-    width: 45%;
+    width: 45%; /* Two boxes in one row */
     margin-bottom: 15px;
   }
 
   .foot-pannel2 ul {
     margin: 10px;
+    font-size: 0.8rem;
   }
 }
 
@@ -398,22 +396,27 @@ padding-top: 25px;
     padding: 10px;
   }
 
-  .nav-logo {
-    width: 60px;
-    height: 30px;
-  }
-
+  /* Remove the search feature */
   .nav-search {
-    flex-direction: column;
-    width: 100%;
-    padding: 5px;
+    display: none;
   }
 
-  .nav-search input {
-    margin-bottom: 5px;
+  .nav-logo {
+    width: 50px;
+    height: 25px;
   }
 
-  .nav-cart, .nav-returns, .nav-singin, .language {
+  .nav-cart {
+    font-size: 0.7rem;
+  }
+
+  .nav-cart i {
+    font-size: 20px; /* Decrease cart icon size */
+  }
+
+  .nav-returns,
+  .nav-singin,
+  .language {
     font-size: 0.7rem;
     margin: 5px;
   }
@@ -429,9 +432,23 @@ padding-top: 25px;
     width: 90%;
   }
 
+  .shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .shop-section .box {
-    width: 90%;
+    width: 48%; /* Two boxes in one row */
     margin-bottom: 10px;
+  }
+
+  .box h2 {
+    font-size: 0.8rem; /* Decrease heading size */
+  }
+
+  .box-content a {
+    font-size: 0.7rem; /* Decrease link size */
   }
 
   .foot-pannel2 ul {
@@ -442,6 +459,11 @@ padding-top: 25px;
   .foot-pannel4 .pages a {
     display: block;
     margin: 5px 0;
+    font-size: 0.7rem; /* Decrease footer link size */
+  }
+
+  .copyright {
+    font-size: 0.65rem; /* Decrease copyright text size */
   }
 }
 
